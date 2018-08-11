@@ -1,4 +1,4 @@
-main#home > .content > section {
+main > .content > section {
     min-height: 100vh !important;
 }
 
@@ -10,6 +10,23 @@ main#home > .content > section {
 }
 
 .bg-home:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background: rgba(5, 3, 19, 0.8);
+}
+
+.bg-about {
+    background: url("../img/background-about.jpg") !important;
+    background-attachment: fixed;
+    background-size: cover !important;
+}
+
+.bg-about:after {
     content: '';
     position: absolute;
     top: 0;
@@ -43,6 +60,10 @@ h1.sm-heading, h2.sm-heading, h3.sm-heading {
     display: inline !important;
 }
 
+#pf-img-sm {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     main {
         align-items: center;
@@ -59,5 +80,6 @@ h1.sm-heading, h2.sm-heading, h3.sm-heading {
     }
     main .lg-heading {
         margin-top: 1rem;
-        font-size: 5rem; }
+        font-size: 5rem;
+    }
 }
