@@ -1,0 +1,34 @@
+{
+      user(login: "mintunitish") {
+        bio,
+        avatarUrl,
+        repositories (first :100 privacy: PUBLIC) {
+          nodes {
+          	name,
+            url,
+            stargazers{
+              totalCount
+            },
+            owner {
+              login
+            }
+            forks {
+              totalCount
+            },
+            homepageUrl,
+            description,
+            repositoryTopics (first: 100){
+              nodes {
+                topic {
+                  name
+                }
+              }
+            }
+          },
+          pageInfo {
+          	hasNextPage,
+            endCursor
+        	}
+        }
+      }
+    }
