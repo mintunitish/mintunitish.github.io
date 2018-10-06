@@ -6,6 +6,10 @@ nav {
     max-height: 50px;
 }
 
+.txt-type > .txt {
+    border-right: 0.2rem solid #777;
+}
+
 
 .bg-home {
     background: url("../img/background.jpg") !important;
