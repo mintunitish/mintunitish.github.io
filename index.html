@@ -44,11 +44,34 @@
             </div>
             <div id="call-to-action" style="z-index:4;">
                 <img src="./images/undraw_personalization_triu.svg" class="float-svg" height="250px" width="250px">
-                <button type="button" onclick="window.location='./contact.html';" id="call-action">Get Connected</button>
+                <button type="button" onclick="window.location='./contact.html';" id="call-action">Get Connected
+                </button>
             </div>
         </div>
     </div>
 </main>
+<script>
+    const body = document.querySelector('body');
+    body.style.setProperty("--bg-img", `url("${returnBgImgPropVal()}") 0 0 no-repeat`);
+    let prop = getComputedStyle(body).getPropertyValue('--bg-img');
+    console.log(prop);
+
+    function returnBgImgPropVal() {
+        const imgLinkArr = [
+            "https://instagram.fdel1-1.fna.fbcdn.net/vp/3d48dc9319413ec4215e1c9c6816bb49/5C48F360/t51.2885-15/sh0.08/e35/s640x640/35988228_401276220358203_1993506167040507904_n.jpg",
+            "https://instagram.fdel1-1.fna.fbcdn.net/vp/0e364fdf65585182e4bae31619167bbc/5C52B18D/t51.2885-15/sh0.08/e35/s640x640/35459580_193850271304042_8080497740653527040_n.jpg",
+            "https://instagram.fdel1-1.fna.fbcdn.net/vp/5b0d36d5952be3eb2a899e9f0d2470c6/5C89C3EA/t51.2885-15/sh0.08/e35/s640x640/34675957_2027980587530263_415064265095905280_n.jpg",
+            "https://instagram.fdel1-1.fna.fbcdn.net/vp/01b3392270e8269165bea7cb0a9985ae/5C436ABE/t51.2885-15/sh0.08/e35/c180.0.720.720/s640x640/34809867_194618707852359_54767069316513792_n.jpg",
+            "https://instagram.fdel1-1.fna.fbcdn.net/vp/d741855de3ad45cbca4d7f6a0e714773/5C51AF9B/t51.2885-15/sh0.08/e35/s640x640/30076670_587941974904315_3526639999418105856_n.jpg",
+            "https://instagram.fdel1-1.fna.fbcdn.net/vp/dcadc739b453117485f0d96ef6d31752/5C442542/t51.2885-15/sh0.08/e35/c0.135.1080.1080/s640x640/26395067_160193394609157_9152129593249890304_n.jpg",
+            "https://instagram.fdel1-1.fna.fbcdn.net/vp/ee463c0796596a2a33995e60f5348c80/5C64BE58/t51.2885-15/sh0.08/e35/c86.0.908.908/s640x640/26223139_1912836155411376_822981090430943232_n.jpg",
+            "https://instagram.fdel1-1.fna.fbcdn.net/vp/253bc5aae02bea8dc899d1cf26b61b81/5C667159/t51.2885-15/sh0.08/e35/s640x640/25017983_2001980453397607_3791049516283592704_n.jpg",
+            "https://instagram.fdel1-1.fna.fbcdn.net/vp/95ba253343191939582e81d6475a24d0/5C57297E/t51.2885-15/e35/30076670_587941974904315_3526639999418105856_n.jpg",
+        ];
+        const random = Math.floor(Math.random() * imgLinkArr.length);
+        return imgLinkArr[random];
+    }
+</script>
 <script src="./js/main.js"></script>
 <script src="./v1/assets/js/typewriter.js"></script>
 </body>

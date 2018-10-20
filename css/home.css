@@ -1,3 +1,7 @@
+:root {
+    --bg-img : url('https://instagram.fdel1-1.fna.fbcdn.net/vp/db077e134bd1d48064a3c4eea03a10fe/5C5C2585/t51.2885-15/e35/35988228_401276220358203_1993506167040507904_n.jpg') 0 0 no-repeat;
+}
+
 .wrapper {
     overflow: hidden !important;
     display: flex;
@@ -29,7 +33,7 @@
     display: block;
     width: 40%;
     min-height: 100vh;
-    background: url('https://instagram.fdel1-1.fna.fbcdn.net/vp/db077e134bd1d48064a3c4eea03a10fe/5C5C2585/t51.2885-15/e35/35988228_401276220358203_1993506167040507904_n.jpg') 0 0 no-repeat;
+    background: var(--bg-img);
     background-size: cover;
     background-attachment: local;
     z-index: 2;
