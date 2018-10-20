@@ -22,7 +22,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url("./../v1/assets/img/background-about.jpg") !important;
+    background: url("./../images/background-about-min.jpg") !important;
     background-attachment: fixed;
     background-size: cover !important;    
 }
