@@ -40,8 +40,9 @@
 }
 
 .home-hover:hover {
+    background: url('https://instagram.fdel1-1.fna.fbcdn.net/vp/c264d0d8ed19f1471a25228acbf02da4/5C4C8784/t51.2885-15/e35/19379289_1699702150325803_5042057203368853504_n.jpg');
     background-size: cover;
-    background: url('https://instagram.fdel1-1.fna.fbcdn.net/vp/c264d0d8ed19f1471a25228acbf02da4/5C4C8784/t51.2885-15/e35/19379289_1699702150325803_5042057203368853504_n.jpg') local;
+    background-attachment: local;
 }
 
 .color-white {
@@ -127,6 +128,35 @@ h1.sm-heading, h2.sm-heading, h3.sm-heading {
     border-right: 0.2rem solid #777;
 }
 
+.float-svg {
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+    display: block;
+}
+
+#call-to-action {
+    display: flex;
+    justify-content: center
+}
+
+#call-action {
+    width: 150px;
+    height: 3rem;
+    background-color: transparent;
+    border: 5px solid whitesmoke;
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+#call-action:hover {
+    border: 2px solid red;
+}
+
 @keyframes shake {
     5%, 15%, 25%, 35%, 55%, 65%, 75%, 95% {
         filter: blur(0.018em);
@@ -184,10 +214,18 @@ h1.sm-heading, h2.sm-heading, h3.sm-heading {
     }
 
     .name-section {
-        margin-top: 0;
+        margin: 0 auto;
     }
 
     .wrap-40 {
+        display: none;
+    }
+
+    .sm-heading {
+        margin: 1rem auto;
+    }
+
+    .float-svg {
         display: none;
     }
 }
