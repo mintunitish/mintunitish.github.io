@@ -47,6 +47,16 @@ main {
     z-index: 2;
 }
 
+.home-hover {
+    transition: background 0.7s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.home-hover:hover {
+    background: url('https://instagram.fdel1-1.fna.fbcdn.net/vp/c264d0d8ed19f1471a25228acbf02da4/5C4C8784/t51.2885-15/e35/19379289_1699702150325803_5042057203368853504_n.jpg');
+    background-size: cover;
+    background-attachment: local;
+}
+
 .color-white {
     color: whitesmoke;
 }
@@ -55,11 +65,6 @@ main {
     padding: 0 3rem;
     margin: 2rem;
     z-index: 3;
-}
-
-.img-section {
-    width: 100vw;
-    height: 100vh;
 }
 
 #name {
