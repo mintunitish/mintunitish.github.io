@@ -39,6 +39,7 @@ main {
 }
 
 .wrap-40 {
+    display: block;
     width: 40%;
     min-height: 100vh;
     background: url('https://instagram.fdel1-1.fna.fbcdn.net/vp/db077e134bd1d48064a3c4eea03a10fe/5C5C2585/t51.2885-15/e35/35988228_401276220358203_1993506167040507904_n.jpg') 0 0 no-repeat;
@@ -65,6 +66,20 @@ main {
     padding: 0 3rem;
     margin: 2rem;
     z-index: 3;
+}
+
+.img-home {
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+}
+
+.img-home > img {
+    max-height: 200px;
+    max-width: 200px;
+    border: 5px solid whitesmoke;
+    border-radius: 50%;
+    display: none;
 }
 
 #name {
@@ -170,5 +185,23 @@ h1.sm-heading, h2.sm-heading, h3.sm-heading {
 
     100% {
         transform: translate(-49%, -53%);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .img-home > img {
+        display: block;
+    }
+
+    .wrap-60 {
+        width: 100vw;
+    }
+
+    .name-section {
+        margin-top: 0;
+    }
+    
+    .wrap-40 {
+        display: none;
     }
 }
