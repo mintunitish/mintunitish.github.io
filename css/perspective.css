@@ -1,0 +1,31 @@
+ul {
+    list-style-type: none;
+    perspective: 1000px;
+}
+
+ul li {
+    display: grid;
+    grid-template-columns: 20% auto;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 15px;
+    transform: rotateY(-30deg) rotateX(15deg);
+    position: absolute;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+}
+
+ul li:nth-child(1) {
+    background: #bfe8fc;
+    top: -105px;
+    z-index: 5;
+}
+
+ul li:nth-child(2) {
+    background: #faffc8;
+    z-index: 4;
+}
+
+ul li:nth-child(2) {
+    background: rgb(242, 228, 255);
+    top: 105px;
+}
