@@ -53,8 +53,6 @@
 <script>
     const body = document.querySelector('body');
     body.style.setProperty("--bg-img", `url("${returnBgImgPropVal()}") 0 0 no-repeat`);
-    let prop = getComputedStyle(body).getPropertyValue('--bg-img');
-    console.log(prop);
 
     function returnBgImgPropVal() {
         const imgLinkArr = [

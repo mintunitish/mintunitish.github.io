@@ -1,5 +1,5 @@
 :root {
-    --bg-img : url('https://instagram.fdel1-1.fna.fbcdn.net/vp/db077e134bd1d48064a3c4eea03a10fe/5C5C2585/t51.2885-15/e35/35988228_401276220358203_1993506167040507904_n.jpg') 0 0 no-repeat;
+    --bg-img: url('https://instagram.fdel1-1.fna.fbcdn.net/vp/db077e134bd1d48064a3c4eea03a10fe/5C5C2585/t51.2885-15/e35/35988228_401276220358203_1993506167040507904_n.jpg') 0 0 no-repeat;
 }
 
 .wrapper {
@@ -112,20 +112,6 @@
     animation: crack2 2.5s linear forwards;
     -webkit-clip-path: polygon(44% 0%, 100% 0%, 100% 100%, 70% 100%);
     clip-path: polygon(44% 0%, 100% 0%, 100% 100%, 70% 100%);
-}
-
-h1, h2, h3 {
-    font-weight: 400;
-}
-
-h1.lg-heading, h2.lg-heading, h3.lg-heading {
-    font-size: 6rem;
-}
-
-h1.sm-heading, h2.sm-heading, h3.sm-heading {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
 }
 
 .txt-type > .txt {

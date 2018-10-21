@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="shortcut icon" type="image/jpg"
+          href="https://instagram.fdel1-1.fna.fbcdn.net/vp/1d1aba269deb00a7600f076c64352309/5C51DEF9/t51.2885-19/s150x150/38826841_710633702619218_3970190785428586496_n.jpg">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="bars" id="nav-action">
+        <span class="bar"></span>
+    </div>
+    <nav id="nav">
+        <ul>
+            <li class="shape-circle circle-one"><a href="./skills.html">Skills</a></li>
+            <li class="shape-circle circle-two"><a href="./work.html">Work</a></li>
+            <li class="shape-circle circle-three"><a href="./contact.html">Contact</a></li>
+            <li class="shape-circle circle-five"><a href="./index.html">Home</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <div class="header-section">
+            <h1 class="lg-heading">Let's Connect</h1>
+        </div>
+        <div id="contact-form">
+            <h2 class="sm-heading">Fill up the form and hit send!</h2>
+            <form action="https://formspree.io/nitishkr1729@gmail.com" method="POST" onsubmit="return getFormData()">
+                <div class="ip-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="ip-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="ip-group">
+                    <label for="phone">Phone (Optional)</label>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+                <div class="ip-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+                <div class="ip-group">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+        <div id="social">
+            <ul>
+                <li><a href="https://facebook.com/">Facebook <i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://github.com/">Github <i class="fa fa-github"></i></a></li>
+                <li><a href="https://github.com/">LinkedIn <i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/">Instagram <i class="fa fa-instagram"></i></a></li>
+            </ul>
+
+        </div>
+        <div id="illustration">
+            <img src="./images/undraw_conversation_h12g.svg" height="60%" width="60%">
+        </div>
+    </div>
+</main>
+<script src="./js/main.js"></script>
+<script type="text/javascript">
+    function getFormData() {
+        const name = (document.getElementById('name').value === "") ? false : document.getElementById('name').value;
+        const email = (document.getElementById('email').value === "") ? false : document.getElementById('email').value;
+        const message = (document.getElementById('message').value === "") ? false : document.getElementById('message').value;
+
+        if (name && email && message) {
+            return true;
+        }
+
+        return false;
+    }
+</script>
+</body>
+</html>
