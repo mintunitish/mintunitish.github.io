@@ -1,3 +1,12 @@
+body {
+    overflow-x: hidden;
+}
+
+main {
+    width: unset;
+    min-height: unset;
+}
+
 .bar {
     background-color: black;
 }
@@ -8,7 +17,6 @@
 
 .container {
     width: 100%;
-    overflow: hidden !important;
     height: 100%;
 }
 
@@ -105,7 +113,10 @@ a {
 .header-section {
     margin-left: 5rem;
     color: #536dfe;
-    width: 50%;
+}
+
+.header-section > h1 {
+    margin-top: 1rem;
 }
 
 #contact-form {
@@ -140,7 +151,6 @@ input, textarea {
     outline: none;
     font-family: inherit;
     font-size: 1rem;
-    vertical-align: center;
 }
 
 button {
@@ -152,4 +162,57 @@ button {
     box-shadow: 10px 10px 10px lightslategrey;
     font-family: inherit;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1250px) {
+    .lg-heading {
+        font-size: 5rem !important;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    #contact-form {
+        margin-top: -6rem;
+    }
+
+    img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #contact-form {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .lg-heading {
+        font-size: 3rem !important;
+    }
+
+    #contact-form {
+        margin-top: -2rem;
+        margin-right: auto;
+    }
+
+    textarea {
+        height: 3rem;
+    }
+
+    img {
+        display: none;
+    }
+
+    #social {
+        top: 50px;
+        display: none;
+    }
 }
