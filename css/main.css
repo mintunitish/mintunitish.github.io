@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,100,400');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -111,6 +115,10 @@ nav > ul {
 .visible {
     z-index: 100 !important;
     opacity: 1 !important;
+}
+
+.text-white {
+    color: whitesmoke;
 }
 
 .shape-circle {

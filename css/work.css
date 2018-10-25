@@ -12,11 +12,237 @@ body {
 
 h1 {
     margin-top: unset;
-    color: #536dfe;
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+h1 > span {
+    font-weight: 300;
+    color: yellow;
 }
 
 .container {
     width: 100%;
     height: 100%;
-    padding: 0 1rem;
 }
+
+.jobs {
+    color: whitesmoke;
+}
+
+.wrap {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    height: 100vh !important; 
+    border-bottom: 2px dashed blue;
+    transform: skewY(-8deg);
+    transform-origin: 0;
+    background: url("./../v1/assets/img/background-skills.jpg") !important;
+    background-size: cover !important;
+}
+
+.wrap:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(5, 3, 19, 0.8);
+}
+
+#open-src-org {
+    text-align: center;
+}
+
+#open-src-org > img {
+    width: 100px;
+    height: 100px;
+    margin: 1rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.job-content {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1140px;
+    justify-content: center !important;
+    flex: 0 0 100%;
+}
+
+img:hover {
+    box-shadow: 10px 10px 10px gray;
+}
+
+.row-grid {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-wrap: wrap;
+}
+
+.col-4 {
+    max-width: 33.33%;
+    flex: 0 0 33.33%;
+    position: relative;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    border-radius: 0.26rem;
+    background-color: #fff;
+    color: black;
+    background-clip: border-box;
+    border: 0 !important;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07)!important;
+    transition: all 0.15s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.py-5 {
+    padding-bottom: 3rem !important;
+}
+
+.card-body {
+    padding: 1.5rem;
+    flex: 1 1 auto;
+}
+
+.text-violet {
+    color: #5e72e4!important;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-green {
+    color: #2dce89!important;
+}
+
+.text-orange {
+    color: #fb6340!important
+}
+
+.text-dim-blue {
+    color: #11cdef!important;
+}
+
+h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+h6 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.description {
+    font-size: 0.875rem;
+    text-align: justify !important;
+    margin-top: 1rem !important;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.badge-pill {
+    padding-right: 0.875rem;
+    padding-left: 0.875rem;
+}
+
+.badge {
+    text-transform: uppercase;
+    font-size: 66%;
+    font-weight: 800;
+    line-height: 1;
+    display: inline-block;
+    padding: .35rem .375rem;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+    border-radius: 10rem;
+}
+
+.badge-primary {
+    color: #2643e9;
+    background-color: rgba(203,210,246,.5);
+}
+
+.badge-success {
+    color: #1aae6f;
+    background-color: rgba(147,231,195,.5);
+}
+
+.badge-warning {
+    color: #ff3709;
+    background-color: rgba(254,201,189,.5);
+}
+
+.btn {
+    cursor: pointer;
+    font-size: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.15s ease;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    will-change: transform;
+    margin-top: 1.5rem;
+    font-weight: 800;
+    line-height: 1.5;
+    display: inline-block;
+    padding: 0.625rem 1.25rem;
+    user-select: none;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-primary {
+    color: whitesmoke;
+    border-color: #5e72e4;
+    background-color: #5e72e4;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+
+.btn-success {
+    color: whitesmoke;
+    border-color: #2dce89;
+    background-color: #24a46d;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+
+.btn-warning {
+    color: whitesmoke;
+    border-color: #fb6340;
+    background-color: #fa3a0e;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+
