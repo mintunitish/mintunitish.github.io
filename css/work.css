@@ -1,9 +1,5 @@
-.bar {
-    background-color: black;
-}
-
-#nav-action > span::before, #nav-action > span::after {
-    background-color: black;
+* {
+    box-sizing: border-box;
 }
 
 body {
