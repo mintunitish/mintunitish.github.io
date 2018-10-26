@@ -53,6 +53,7 @@ h1 > span {
 
 #open-src-org {
     text-align: center;
+    left: 50%;
 }
 
 #open-src-org > img {
@@ -75,7 +76,7 @@ section {
     flex: 0 0 100%;
 }
 
-img:hover {
+.shadow-img:hover {
     box-shadow: 10px 10px 10px gray;
 }
 
@@ -242,3 +243,8 @@ h6 {
     box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 }
 
+#svg-img {
+    position: absolute;
+    left: 3rem;
+    z-index: -2;
+}

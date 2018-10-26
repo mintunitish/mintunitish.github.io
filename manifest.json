@@ -1,0 +1,15 @@
+{
+  "short_name": "Portfolio",
+  "name": "Nitish's Portfolio",
+  "icons": [
+    {
+      "src":"https://instagram.fdel1-1.fna.fbcdn.net/vp/1d1aba269deb00a7600f076c64352309/5C51DEF9/t51.2885-19/s150x150/38826841_710633702619218_3970190785428586496_n.jpg",
+      "sizes": "192x192",
+      "type": "image/jpg"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "whitesmoke",
+  "Theme_color": "#536dfe",
+  "display": "standalone"
+}
